@@ -58,13 +58,28 @@ nav li a {
 /* Banner */
 
 #banner {
-    height: 10rem;
-    margin-top: -1rem;
+    margin-top: 4rem;
+    height: 50rem;
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
 
-#banner img {
-    width: 100%;
-    z-index: 1;
+#bio_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-top: -20rem;
+}
+
+#banner .bio {
+    color: white;
+    width: 60%;
 }
 
 #banner .photo {
@@ -72,28 +87,34 @@ nav li a {
     height: 20rem;
     width: 20rem;
     border-radius: 50%;
-    position: absolute;
-    top: 8rem;
-    right: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#banner .bio {
-    position: absolute;
-    top: 14rem;
-    left: 15rem;
-    color: white;
-    margin-right: 40rem;
-}
-
-.bio h2 {
+h2 {
     font-size: 2rem;
 }
 
 .bio p {
     font-size: 1rem;
 }
+
+
+/* Projects */
+
+#projects {
+    position: relative;
+    top: -10rem;
+    display: flex; 
+    color: white;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* Skills */
+
+
 
 /* Footer */
