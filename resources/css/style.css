@@ -29,6 +29,7 @@ nav {
     height: 4rem;
     background-color: rgb(44, 1, 70);
     border-bottom: silver 2px solid;
+    z-index: 100;
 }
 
 nav h1 {
@@ -40,7 +41,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 30%;
+    width: 50%;
 }
 
 nav li {
@@ -103,18 +104,61 @@ h2 {
 
 /* Projects */
 
-#projects {
-    position: relative;
-    top: -10rem;
+.content-section {
     display: flex; 
     color: white;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 
+.content-section h2 {
+    padding-bottom: 1rem;
+}
+
+.content {
+    
+}
+
+#projects {
+    position: relative;
+    top: -10rem;
+    display: flex;          /* read up on grid and see if want to try*/
+    flex-flow: column wrap;
+}
+
+#projects-container {
+    height: 10em;
+    width: 80%;
+    background-color: aliceblue;  /*just to see what space workng with*/
+}
 
 /* Skills */
 
+#skills {
+    margin-top: -6rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#skills-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
 
 
 /* Footer */
+
+footer {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-top: silver solid 1px;
+}
+
+footer small {
+    color: silver;
+}
