@@ -182,6 +182,10 @@ h2 {
     width: 100%;
 }
 
+.project-container a {
+    text-decoration: none;
+}
+
 .js .project-container {
     justify-content: right;
 }
@@ -211,7 +215,7 @@ h2 {
 }
 
 figure {
-    
+    height: 100%;
 }
 
 figure img {
