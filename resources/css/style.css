@@ -112,6 +112,21 @@ h2 {
     width: 100%;
 }
 
+#bio_section-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: -25rem;
+}
+
+.bio-contact {
+    color: white;
+    width: 100%;
+    background-color: rgba(44, 1, 70, 0.35);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+}
 
 /* Projects */
 
