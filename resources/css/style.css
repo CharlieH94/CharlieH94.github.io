@@ -228,19 +228,19 @@ figcaption{
 /* Skills */
 
 #skills {
-    margin-top: -6rem;
+    margin: -6rem 0 6rem 0;
     display: flex;
     flex-flow: column wrap;
 }
 
-#skills-container {
-    display: flex;
+#skills .project-container {
     justify-content: space-evenly;
     width: 80%;
 }
 
 .fab, .fas {
     font-size: 4rem;
+    padding: 0 1rem;
 }
 
 
