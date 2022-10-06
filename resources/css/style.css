@@ -239,6 +239,10 @@ figcaption{
     width: 80%;
 }
 
+.fab, .fas {
+    font-size: 4rem;
+}
+
 
 /* Footer */
 
