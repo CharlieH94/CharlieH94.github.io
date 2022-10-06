@@ -88,16 +88,7 @@ h2 {
     background-color: rgba(44, 1, 70, 0.35);
     padding: 1rem;
     border-radius: 1rem;
-}
-
-#banner .photo {
-    background-color: white;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
 }
 
 .bio p {
@@ -107,6 +98,18 @@ h2 {
 
 .bio ul {
     padding-left: 2rem;
+}
+
+#banner .img-container {
+    max-height: 20rem;
+    max-width: 20rem;
+    margin-left: 1rem;
+}
+
+#banner .photo {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 
