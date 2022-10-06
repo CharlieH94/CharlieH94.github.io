@@ -32,11 +32,6 @@ nav {
     z-index: 100;
 }
 
-nav h1 {
-    font-size: 2rem;
-    color: white;
-}
-
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -44,9 +39,11 @@ nav ul {
     width: 50%;
 }
 
-nav li {
-
-}
+nav h1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+} 
 
 nav li a {
     text-decoration: none;
