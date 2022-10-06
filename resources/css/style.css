@@ -56,6 +56,10 @@ nav li a {
 
 /* Main & Sections */
 
+h2 {
+    font-size: 2rem;
+}
+
 /* Banner */
 
 #banner {
@@ -75,12 +79,15 @@ nav li a {
     justify-content: space-around;
     align-items: center;
     width: 80%;
-    margin-top: -20rem;
+    margin-top: -27rem;
 }
 
 #banner .bio {
     color: white;
     width: 60%;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 #banner .photo {
@@ -93,12 +100,13 @@ nav li a {
     align-items: center;
 }
 
-h2 {
-    font-size: 2rem;
-}
-
 .bio p {
     font-size: 1rem;
+    padding: 0.25rem 0;
+}
+
+.bio ul {
+    padding-left: 2rem;
 }
 
 
