@@ -317,3 +317,8 @@ footer {
 footer small {
     color: silver;
 }
+
+footer a {
+    color: rgb(117, 196, 202);
+    text-decoration: none;
+}
