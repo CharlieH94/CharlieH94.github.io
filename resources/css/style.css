@@ -88,7 +88,7 @@ h2 {
     /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
 }
 
-.bio p {
+.bio p, .bio-contact p {
     font-size: 1rem;
     padding: 0.25rem 0;
 }
@@ -123,6 +123,13 @@ h2 {
     background-color: rgba(44, 1, 70, 0.35);
     padding: 1rem 3rem;
     border-radius: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.bio-contact p {
+    text-align: center;
 }
 
 /* Projects */
@@ -135,7 +142,7 @@ h2 {
     align-items: center;
 }
 
-.content-section h2 {
+#projects h2 {
     padding-bottom: 2rem;
 }
 
@@ -249,6 +256,10 @@ figcaption{
     flex-flow: column wrap;
 }
 
+.content-section h2 {
+    padding-bottom: 1rem;
+}
+
 #skills .project-container {
     justify-content: space-evenly;
     width: 80%;
@@ -256,7 +267,12 @@ figcaption{
 
 .fab, .fas {
     font-size: 4rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+.email-icon {
+    display: none;
 }
 
 
