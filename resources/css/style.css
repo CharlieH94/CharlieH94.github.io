@@ -51,6 +51,10 @@ nav li a {
     font-size: 1rem;
 }
 
+nav li a:hover {
+    color: rgb(117, 196, 202);
+}
+
 /* Main & Sections */
 
 h2 {
