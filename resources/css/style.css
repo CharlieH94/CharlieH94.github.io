@@ -80,12 +80,12 @@ h2 {
     justify-content: space-between;
     align-items: center;
     width: 80%;
-    margin-top: -15rem;
+    margin-top: -22rem;
 }
 
 #banner .bio {
     color: white;
-    width: 60%;
+    width: 65%;
     background-color: rgba(44, 1, 70, 0.35);
     padding: 1rem 3rem;
     border-radius: 1rem;
@@ -225,21 +225,22 @@ h2 {
     text-align: center;
 }
 
-.off-platform .project {
+.off-platform .project-container a {
     margin: 1rem 1rem 0 0;
 }
 
-.js .project {
+.js .project-container a {
     margin: 1rem 0 0 1rem;
 }
 
-.challenge .project {
+.challenge .project-container a {
     margin-top: 1rem;
 }
 
-figure {
-    height: 100%;
+#cheat {
+    margin-top: 1rem;
 }
+
 
 figure img {
     width: 100%;
@@ -250,6 +251,8 @@ figure img {
 
 figcaption{
     padding: 0 0.5rem 0.5rem 0.5rem;
+    color: black;
+    height: 100%;
 }
 
 /* Skills */
