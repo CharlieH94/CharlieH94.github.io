@@ -13,7 +13,7 @@ html {
     font-size: 16px;
 }
 
-/* Header */ 
+/* Header */
 
 /* Nav */
 
@@ -46,7 +46,7 @@ nav h1 a {
     color: white;
     font-family: 'Aladin', cursive;
     letter-spacing: 0.2rem;
-} 
+}
 
 nav li a {
     text-decoration: none;
@@ -89,13 +89,13 @@ nav li {
     width: 3rem;
     height: 1.5rem;
     padding: 0 1rem;
-  }
+}
 
-  .switch input {
+.switch input {
     display: none;
-  }
+}
 
-  .slider {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -104,9 +104,9 @@ nav li {
     bottom: 0;
     background-color: silver;
     transition: .4s;
-  }
+}
 
-  .slider:before {
+.slider:before {
     position: absolute;
     content: "";
     height: 1rem;
@@ -115,23 +115,23 @@ nav li {
     bottom: 4px;
     background-color: white;
     transition: .4s;
-  }
+}
 
-  input:checked + .slider {
+input:checked+.slider {
     background-color: rgb(44, 1, 70);
-  }
+}
 
-  input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(1.5rem);
-  }
+}
 
-  .slider.round {
+.slider.round {
     border-radius: 1rem;
-  }
+}
 
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
-  }
+}
 
 /* Main & Sections */
 
@@ -170,7 +170,8 @@ h2 {
     /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
 }
 
-.bio p, .bio-contact p {
+.bio p,
+.bio-contact p {
     font-size: 1rem;
     padding: 0.25rem 0;
 }
@@ -217,7 +218,7 @@ h2 {
 /* Projects */
 
 .content-section {
-    display: flex; 
+    display: flex;
     color: white;
     width: 100%;
     justify-content: center;
@@ -231,7 +232,7 @@ h2 {
 #projects {
     position: relative;
     top: -10rem;
-    display: flex;          
+    display: flex;
     flex-flow: column wrap;
 }
 
@@ -252,7 +253,7 @@ h2 {
 
 .off-platform {
     grid-area: 1 / 1 / 9 / 9;
-    
+
 }
 
 .off-platform h3 {
@@ -260,7 +261,7 @@ h2 {
 }
 
 .js {
-    grid-area: 1 / 9 / 9 / 17; 
+    grid-area: 1 / 9 / 9 / 17;
 }
 
 .js h3 {
@@ -342,7 +343,7 @@ figure img {
     padding: 0.25rem;
 }
 
-figcaption{
+figcaption {
     padding: 0 0.5rem 0.5rem 0.5rem;
     color: black;
     height: 100%;
@@ -366,7 +367,8 @@ figcaption{
     width: 80%;
 }
 
-.fab, .fas {
+.fab,
+.fas {
     font-size: 4rem;
     padding: 1rem 1rem;
     color: white;
@@ -395,4 +397,15 @@ footer small {
 footer a {
     color: rgb(117, 196, 202);
     text-decoration: none;
+}
+
+/* Light Mode */
+
+.light {
+    background-color: white;
+}
+
+nav .light {
+    background-color: silver;
+    border-bottom: rgb(44, 1, 70)
 }
