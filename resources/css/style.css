@@ -189,10 +189,14 @@ h2 {
     margin-left: 1rem;
 }
 
-#banner .photo {
+#banner .photo1 {
     border-radius: 50%;
     height: 100%;
     width: 100%;
+}
+
+#banner .photo2 {
+    display: none;
 }
 
 #bio_section-contact {
@@ -424,7 +428,7 @@ footer a {
 }
 
 .light nav li a:hover {
-    color: rgb(117, 196, 202);
+    color: rgb(186, 0, 109);
 }
 
 .light .fa-regular {
@@ -449,6 +453,17 @@ footer a {
 .light .bio-contact {
     color: black;
     background-color: rgba(117, 196, 202, 0.35);
+}
+
+.light #banner .photo1 {
+    display: none;
+}
+
+.light #banner .photo2 {
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
 }
 
 /* Projects */
@@ -488,5 +503,5 @@ footer a {
 }
 
 .light footer a {
-    color: rgb(117, 196, 202);
+    color: rgb(186, 0, 109);
 }
