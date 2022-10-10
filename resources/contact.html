@@ -1,29 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/favicon-img.png" type="image/x-icon">
-        <link rel="icon" href="images/favicon-img.png" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/aee73c47a3.js" crossorigin="anonymous"></script>
-        <script src="resources/js/script.js" defer></script> 
-        <title>Contact</title>
-    </head>
+<html lang="en" class="lightMode">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-img.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon-img.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aee73c47a3.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer></script>
+    <title>Contact</title>
+</head>
 
     <body>
         <header>
             <nav>
                 <h1><a href="../index.html">Sites by Charlie</a></h1>
                 <ul>
-                    <li><a href="#">(Colour Mode)</a></li>
+                    <li>
+                        <div id="switch">
+                            <i class="fa-regular fa-moon"></i>
+                            <label for="lightToggle" class="switch">
+                                <input id="lightToggle" name="lightToggle" type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <i class="fa-regular fa-sun"></i>
+                        </div>
+                    </li>
                     <li><a href="../index.html#bio">Bio</a></li>
                     <li><a href="../index.html#projects">Projects</a></li>
                     <li><a href="../index.html#skills">Skills</a></li>

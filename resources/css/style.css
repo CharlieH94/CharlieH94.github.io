@@ -8,9 +8,12 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: black;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+}
+
+body {
+    background-color: black;
 }
 
 /* Header */
@@ -399,13 +402,91 @@ footer a {
     text-decoration: none;
 }
 
-/* Light Mode */
+/* LIGHT MODE */
 
-.light {
+/* Nav */
+
+.light body {
     background-color: white;
 }
 
-nav .light {
+.light nav {
+    background-color: white;
+    border-bottom: rgb(44, 1, 70) 2px solid;
+}
+
+.light h1 a {
+    color: black
+}
+
+.light nav li a {
+    color: black;
+}
+
+.light nav li a:hover {
+    color: rgb(117, 196, 202);
+}
+
+.light .fa-regular {
+    color: rgb(44, 1, 70);
+}
+
+/* Main & Sections */
+
+/* Banner */
+
+.light #banner {
+    background-image: url("../images/banner-light-mode.png");
+}
+
+/* add color img to bio img, default hide, then when light, show color and hide greyscale */
+
+.light #banner .bio {
+    color: black;
+    background-color: rgba(117, 196, 202, 0.35);
+}
+
+.light .bio-contact {
+    color: black;
+    background-color: rgba(117, 196, 202, 0.35);
+}
+
+/* Projects */
+
+.light .content-section {
+    color: black;
+}
+
+.light .project {
     background-color: silver;
-    border-bottom: rgb(44, 1, 70)
+    color: black;
+}
+
+.light .project:active {
+    background-color: rgb(117, 196, 202);
+}
+
+.light figcaption {
+    color: black;
+}
+
+/* Skills */
+
+.light .fab,
+.light .fas {
+    color: black;
+}
+
+/* Footer */
+
+.light footer {
+    border-top: rgb(44, 1, 70) solid 1px;
+}
+
+.light footer small {
+    color: rgb(44, 1, 70);
+}
+
+.light footer a {
+    color: rgb(117, 196, 202);
 }
