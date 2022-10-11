@@ -397,8 +397,12 @@ footer {
     border-top: silver solid 1px;
 }
 
-footer small {
+small {
     color: silver;
+}
+
+footer .right {
+    text-align: right;
 }
 
 footer a {
@@ -509,16 +513,77 @@ footer a {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1080px) {
+/* Tablet */
+
+@media only screen and (max-width: 814px) {
     
     /* nav to do - burger bar? */
 
     #bio_section {
         flex-wrap: wrap-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin-top: 0rem;
+        justify-content: space-evenly;
+        margin-top: -4rem;
+    }
+    
+    #banner .bio {
+        width: 100%;
+        margin-top: -10rem;
+        /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
+    }
+    
+    #banner .img-container {
+        max-height: 18rem;
+        max-width: 18rem;
+        margin: 0;
     }
 
+    #projects {
+        top: 0rem;
+    }
+
+    #skills {
+        margin-top: 6rem;
+    }
+
+}
+
+@media only screen and (max-width: 590px) {
+    
+    #projects-grid {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .grid-item {
+        max-width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-item h3 {
+        text-align: center;
+    }
+
+    .js .project-container, .off-platform .project-container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .js .project-container a, .off-platform .project-container a {
+        margin: 1rem 0 0 0;
+    }
+}
+
+/* Phone */
+
+@media only screen and (max-width: 570px) {
+    
+    .off-platform .project-container, .js .project-container, .challenge .project-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
