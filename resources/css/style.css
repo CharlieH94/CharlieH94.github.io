@@ -473,11 +473,11 @@ footer a {
 }
 
 .light .project {
-    background-color: rgba(117, 196, 202, 0.35);
+    background-color: rgba(44, 1, 70, 0.35);
 }
 
 .light .project:active {
-    background-color: silver;
+    background-color: rgb(117, 196, 202);
 }
 
 .light figcaption {
@@ -504,3 +504,7 @@ footer a {
 .light footer a {
     color: rgb(186, 0, 109);
 }
+
+
+
+/* Media Queries */
