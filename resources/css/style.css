@@ -534,7 +534,10 @@ footer a {
     #banner .bio {
         width: 100%;
         margin-top: -10rem;
-        /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
+    }
+
+    .bio-contact {
+        margin-top: 2rem;
     }
     
     #banner .img-container {
