@@ -218,7 +218,7 @@ h2 {
     align-items: center;
 }
 
-.bio-contact p {
+.bio-contact h2, .bio-contact p, .bio-contact div {
     text-align: center;
 }
 
@@ -508,3 +508,17 @@ footer a {
 
 
 /* Media Queries */
+
+@media only screen and (max-width: 1080px) {
+    
+    /* nav to do - burger bar? */
+
+    #bio_section {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-top: 0rem;
+    }
+
+}
