@@ -515,6 +515,12 @@ footer a {
 
 /* Tablet */
 
+@media only screen and (max-width: 865px) {
+    .middle {
+        margin-left: 5rem;
+    }
+}
+
 @media only screen and (max-width: 814px) {
     
     /* nav to do - burger bar? */
@@ -545,6 +551,12 @@ footer a {
         margin-top: 6rem;
     }
 
+}
+
+@media only screen and (max-width: 660px) {
+    .middle {
+        margin-left: 0rem;
+    }
 }
 
 @media only screen and (max-width: 590px) {
