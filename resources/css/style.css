@@ -22,6 +22,7 @@ body {
 
 nav {
     display: flex;
+    flex-grow: 1;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -29,7 +30,7 @@ nav {
     width: 100%;
     height: 4rem;
     padding: 0 1rem;
-    height: 4rem;
+    min-height: 4rem;
     background-color: rgb(44, 1, 70);
     border-bottom: silver 2px solid;
     z-index: 100;
@@ -39,7 +40,7 @@ nav ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    width: 50%;
+    width: 100%;
     align-items: center;
 }
 
@@ -66,6 +67,16 @@ nav li a:hover {
 nav li {
     display: flex;
     align-items: center;
+}
+
+/* Burger Menu Basis */
+
+#menu {
+    width: 40%;
+}
+
+.burger-button {
+    display: none;
 }
 
 /* Colour Mode Switch */
@@ -523,7 +534,19 @@ footer a {
 
 @media only screen and (max-width: 814px) {
     
-    /* nav to do - burger bar? */
+    /* nav to do - burger bar? 
+    #menu label {
+        display: contents;
+        color: white;
+    }
+    */
+
+    /* While unsure about burger menu - smaller nav font sizes  */
+    nav li a {
+        font-size: 0.9rem;
+    }
+
+    /* Main Sections */
 
     #bio_section {
         flex-wrap: wrap-reverse;
@@ -560,10 +583,27 @@ footer a {
     .middle {
         margin-left: 0rem;
     }
+
+    /* While unsure about burger menu - smaller nav font sizes  */
+    nav h1 a {
+        font-size: 1.75rem;
+    }  
+    nav li a {
+        font-size: 0.8rem;
+    }
+
 }
 
 @media only screen and (max-width: 590px) {
     
+    /* While unsure about burger menu - smaller nav font sizes  */
+    nav h1 a {
+        font-size: 1.5rem;
+    }  
+    nav li a {
+        font-size: 0.75rem;
+    }
+
     #projects-grid {
         display: flex;
         flex-flow: column wrap;
@@ -595,6 +635,8 @@ footer a {
 
 @media only screen and (max-width: 570px) {
     
+   
+
     .off-platform .project-container, .js .project-container, .challenge .project-container {
         display: flex;
         flex-direction: column;
@@ -603,12 +645,23 @@ footer a {
     }
 }
 
+/* While unsure about burger menu - smaller nav font sizes  */
+@media only screen and (max-width: 530px) {
+    #menu {
+        width: 80%;
+    }
+
+    nav h1 a {
+        font-size: 1.5rem;
+    }  
+    nav li a {
+        font-size: 0.6rem;
+    }
+}
+
 /* Smaller Screen Phone */
 
 @media only screen and (max-width: 415px) {
-    /* #bio_section {
-        margin-top: -4rem;
-    } */
     
     #banner .bio, .bio-contact {
         padding: 1rem 2rem;
