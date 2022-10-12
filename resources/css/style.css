@@ -73,6 +73,10 @@ nav li {
     display: none;
 }
 
+.mobile-home {
+    display: none;
+}
+
 /* Burger Menu Basis */
 
 #menu {
@@ -643,8 +647,18 @@ footer a {
 
 /* While unsure about burger menu - smaller nav font sizes  */
 @media only screen and (max-width: 530px) {
+    
+    .desktop-home {
+        display: none;
+    }
+
+    .mobile-home {
+        display: block;
+        font-size: 2.5rem;
+    }
+    
     #menu {
-        width: 80%;
+        width: 55%;
     }
 
     nav h1 a {
