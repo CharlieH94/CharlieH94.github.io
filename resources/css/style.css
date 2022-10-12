@@ -69,6 +69,10 @@ nav li {
     align-items: center;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Burger Menu Basis */
 
 #menu {
@@ -542,8 +546,13 @@ footer a {
     */
 
     /* While unsure about burger menu - smaller nav font sizes  */
-    nav li a {
-        font-size: 0.9rem;
+    
+    .mobile{
+        display: block;
+    }
+
+    .desktop {
+        display: none;
     }
 
     /* Main Sections */
@@ -583,26 +592,15 @@ footer a {
     .middle {
         margin-left: 0rem;
     }
-
-    /* While unsure about burger menu - smaller nav font sizes  */
-    nav h1 a {
-        font-size: 1.75rem;
-    }  
-    nav li a {
-        font-size: 0.8rem;
-    }
-
 }
 
 @media only screen and (max-width: 590px) {
     
     /* While unsure about burger menu - smaller nav font sizes  */
     nav h1 a {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }  
-    nav li a {
-        font-size: 0.75rem;
-    }
+
 
     #projects-grid {
         display: flex;
@@ -634,8 +632,6 @@ footer a {
 /* Large Screen Phone */
 
 @media only screen and (max-width: 570px) {
-    
-   
 
     .off-platform .project-container, .js .project-container, .challenge .project-container {
         display: flex;
@@ -654,9 +650,6 @@ footer a {
     nav h1 a {
         font-size: 1.5rem;
     }  
-    nav li a {
-        font-size: 0.6rem;
-    }
 }
 
 /* Smaller Screen Phone */
