@@ -462,12 +462,12 @@ footer a {
 
 .light #banner .bio {
     color: black;
-    background-color: rgba(117, 196, 202, 0.35);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .light .bio-contact {
     color: black;
-    background-color: rgba(117, 196, 202, 0.35);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .light #banner .photo1 {
