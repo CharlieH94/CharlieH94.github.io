@@ -24,12 +24,12 @@
     <body>
         
         <header>
-            <nav>
+            <nav role="menubar">
                 <h1><a href="../index.html">Sites by Charlie</a></h1>
                 <div id="switch">
                     <i class="fa-regular fa-moon"></i>
                     <label for="lightToggle" class="switch">
-                        <input id="lightToggle" name="lightToggle" type="checkbox">
+                        <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
                         <span class="slider round"></span>
                     </label>
                     <i class="fa-regular fa-sun"></i>
@@ -38,10 +38,10 @@
                     <label class="burger-button" for="burger-button"><i class="fa-solid fa-bars"></i></label>
                     <input class="burger-button" type="checkbox" id="burger-button"/>
                     <ul>  
-                        <li><a href="../index.html#bio">Bio</a></li>
-                        <li><a href="../index.html#projects">Projects</a></li>
-                        <li><a href="../index.html#skills">Skills</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="../index.html#bio" role="menuitem">Bio</a></li>
+                        <li><a href="../index.html#projects" role="menuitem">Projects</a></li>
+                        <li><a href="../index.html#skills" role="menuitem">Skills</a></li>
+                        <li><a href="#" role="menuitem">Contact</a></li>
                     </ul>
                 </div>
             </nav>

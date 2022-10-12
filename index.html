@@ -23,12 +23,12 @@
 
 <body>
     <header>
-        <nav>
+        <nav role="menubar">
             <h1><a href="#">Sites by Charlie</a></h1>
             <div id="switch">
                 <i class="fa-regular fa-moon"></i>
                 <label for="lightToggle" class="switch">
-                    <input id="lightToggle" name="lightToggle" type="checkbox">
+                    <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
                     <span class="slider round"></span>
                 </label>
                 <i class="fa-regular fa-sun"></i>
@@ -37,10 +37,22 @@
                 <label class="burger-button" for="burger-button"><i class="fa-solid fa-bars"></i></label>
                 <input class="burger-button" type="checkbox" id="burger-button"/>
                 <ul>  
-                    <li><a href="#banner">Bio</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="resources\contact.html">Contact</a></li>
+                    <li>
+                        <a href="#banner" role="menuitem" class="desktop">Bio</a>
+                        <a href="#banner" role="menuitem" class="mobile"><i class="fa-solid fa-user"></i></i></a>
+                    </li>
+                    <li>
+                        <a href="#projects" role="menuitem" class="desktop">Projects</a>
+                        <a href="#projects" role="menuitem" class="mobile"><i class="fa-solid fa-diagram-project"></i></a>
+                    </li>
+                    <li>
+                        <a href="#skills" role="menuitem" class="desktop">Skills</a>
+                        <a href="#skills" role="menuitem"class="mobile"><i class="fa-solid fa-graduation-cap"></i></a>
+                    </li>
+                    <li>
+                        <a href="resources\contact.html" role="menuitem" class="desktop">Contact</a>
+                        <a href="resources\contact.html" role="menuitem" class="mobile"><i class="fa-solid fa-paper-plane"></i></a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -53,14 +65,14 @@
                     <p>Hi, my name is Charlie and I'm pleased you've found my page.</p>
                     <p>I'm a qualified dentist, but have recently started learning about coding and web development.</p>
                     <p>Currently I'm working through:
-                    <ul>
+                    <ul role="presentation">
                         <li>CodeCademy's Full Stack Pathway</li>
                         <li>Harvard's CS50x Course</li>
                     </ul>
                     </p>
                     <p>Please take a look at some of thing's I've been up to, and let me know what you think!</p>
                 </div>
-                <div class="img-container"><img class="photo1" src="resources/images/thumbnail_image1.jpg" /><img class = "photo2" src="resources/images/thumbnail_image1-lightmode.jpeg"/></div>
+                <div class="img-container"><img class="photo1" src="resources/images/thumbnail_image1.jpg" alt="Charlie Black & White"/><img class = "photo2" src="resources/images/thumbnail_image1-lightmode.jpeg" alt="Charlie Colour"/></div>
             </div>
         </section>
         <section id="projects" class="content-section" >
@@ -72,7 +84,7 @@
                         <a href="https://charlieh94.github.io/DasmotosArtsCrafts/">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Dasmotos.png" />
+                                    <img src="resources/images/Dasmotos.png" alt="Dasmotos Landing Page"/>
                                     <figcaption>Dasmotos</figcaption>
                                 </figure>
                             </div>
@@ -80,7 +92,7 @@
                         <a href="https://charlieh94.github.io/TeaCozy/">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Tea Cozy.png" />
+                                    <img src="resources/images/Tea Cozy.png" alt="Tea Cozy Landing Page"/>
                                     <figcaption>Tea Cozy</figcaption>
                                 </figure>
                             </div>
@@ -93,7 +105,7 @@
                         <a href="https://github.com/CharlieH94/CreditCardChecker">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/CC Checker.png" />
+                                    <img src="resources/images/CC Checker.png" alt="Credit Card Checker GitHub Repository"/>
                                     <figcaption>Credit Card Checker</figcaption>
                                 </figure>
                             </div>
@@ -101,7 +113,7 @@
                         <a href="https://github.com/CharlieH94/MysteriousOrganism">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Mysterious.png" />
+                                    <img src="resources/images/Mysterious.png" alt="Mysterious Organisms GitHub Repository" />
                                     <figcaption>Mysterious Organisms</figcaption>
                                 </figure>
                             </div>
@@ -109,7 +121,7 @@
                         <a href="https://github.com/CharlieH94/MixedMessages">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Mixed Messages.png" />
+                                    <img src="resources/images/Mixed Messages.png" alt="Mixed Messages GitHub Repository"/>
                                     <figcaption>Mixed Messages</figcaption>
                                 </figure>
                             </div>
@@ -123,7 +135,7 @@
                             <a href="https://charlieh94.github.io/CheatSheet/">
                                 <div>
                                     <figure>
-                                        <img src="resources/images/Cheat Sheet.png" />
+                                        <img src="resources/images/Cheat Sheet.png" alt="Cheat Sheet Landing Page"/>
                                         <figcaption>Cheat Sheet</figcaption>
                                     </figure>
                                 </div>
@@ -132,7 +144,7 @@
                         <a href="https://charlieh94.github.io/WebsiteDesignSystem/">
                             <div class="project middle">
                                 <figure>
-                                    <img src="resources/images/Style Guide.png" />
+                                    <img src="resources/images/Style Guide.png" alt="Style Guide Landing Page"/>
                                     <figcaption>Website Design System / Style Guide</figcaption>
                                 </figure>
                             </div>
@@ -140,7 +152,7 @@
                         <a href="https://charlieh94.github.io/FlexboxHomepage/">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Georges Gym.png" />
+                                    <img src="resources/images/Georges Gym.png" alt="George's Gym Landing Page"/>
                                     <figcaption>Company Home Page - "George's Gym"</figcaption>
                                 </figure>
                             </div>
@@ -148,7 +160,7 @@
                         <a href="https://charlieh94.github.io/ResponsiveClubWebsite/">
                             <div class="project middle">
                                 <figure>
-                                    <img src="resources/images/Gaming Club.png" />
+                                    <img src="resources/images/Gaming Club.png" alt="Gaming Club Landing Page"/>
                                     <figcaption>Responsive Club Site - "Gaming Club"</figcaption>
                                 </figure>
                             </div>
@@ -156,7 +168,7 @@
                         <a href="https://charlieh94.github.io/ColmarAcademy/">
                             <div class="project">
                                 <figure>
-                                    <img src="resources/images/Colmar Academy.png" />
+                                    <img src="resources/images/Colmar Academy.png" alt="Colmar Academy Landing Page"/>
                                     <figcaption>Capstone Project - "Colmar Academy"</figcaption>
                                 </figure>
                             </div>
