@@ -549,7 +549,7 @@ footer a {
     }
     */
 
-    /* While unsure about burger menu - smaller nav font sizes  */
+    /* While unsure about burger menu - icons */
     
     .mobile{
         display: block;
@@ -600,7 +600,7 @@ footer a {
 
 @media only screen and (max-width: 590px) {
     
-    /* While unsure about burger menu - smaller nav font sizes  */
+    /* While unsure about burger menu - smaller logo size */
     nav h1 a {
         font-size: 1.75rem;
     }  
@@ -645,7 +645,7 @@ footer a {
     }
 }
 
-/* While unsure about burger menu - smaller nav font sizes  */
+/* While unsure about burger menu - change logo to initials, more space for nav icons */
 @media only screen and (max-width: 530px) {
     
     .desktop-home {
