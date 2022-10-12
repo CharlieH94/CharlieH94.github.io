@@ -14,7 +14,7 @@ It was suggested that portfolio websites typically have a main page featuring di
 - Deploy my site to the web using GitHub Pages
 
 ## Features
-- Overview of some of the projects completed as part of CodeCademy's Full Stack Pathway (ranging from early to more recent)
+- Overview of some projects I've completed as part of CodeCademy's Full Stack Pathway (ranging from early to more recent)
 - Light/dark mode toggle
 - Separate contacts page
 
