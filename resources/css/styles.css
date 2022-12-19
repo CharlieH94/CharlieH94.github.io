@@ -271,18 +271,21 @@ h2 {
 }
 
 .challenge {
+    text-align: center;
     justify-content: space-between;
 }
 
 .cheat {
-    align-self: stretch;
+    height: 100%;
 }
 
-.project-container a:hover {
+.project-container a:hover,
+#cheat:hover {
     transform: scale(1.075);
 }
 
-.project-container a {
+.project-container a,
+#cheat {
     text-decoration: none;
     transition-property: all;
     transition-duration: 0.30s;
