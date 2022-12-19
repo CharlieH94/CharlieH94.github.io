@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    /* background-color: black; */
+    background-color: black;
 }
 
 /* Header */
@@ -72,8 +72,84 @@ nav li a:hover {
     display: none;
 }
 
+/* Colour Mode Switch */
+#switch {
+    display: inline-flex;
+    align-items: center;
+}
+
+.fa-regular {
+    color: silver;
+}
+
+.fa-moon {
+    padding-right: 0.25rem;
+}
+
+.fa-sun {
+    padding-left: 0.25rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0 1rem;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: silver;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(44, 1, 70);
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.5rem);
+}
+
+.slider.round {
+    border-radius: 1rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
 
 /* Main & Sections */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    width: 80%;
+}
 
 h2 {
     font-size: 2rem;
@@ -86,28 +162,27 @@ h2 {
     height: 50rem;
     width: 100%;
     background-image: url("../images/banner.jpg");
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
 #bio_section {
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin-top: -20rem;
+    flex-wrap: wrap-reverse;
 }
 
-#banner .bio {
+.bio {
     color: white;
-    width: 65%;
     background-color: rgba(44, 1, 70, 0.35);
     padding: 1rem 3rem;
     border-radius: 1rem;
-    /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
+    width: 65%;
 }
 
 .bio p,
@@ -181,7 +256,6 @@ h2 {
 }
 
 #projects-grid {
-    width: 80%;
     display: grid;
     grid-template-columns: repeat(16, minmax(0, 1fr));
     grid-template-rows: repeat(16, minmax(0, 1fr));
@@ -446,72 +520,32 @@ footer a {
     color: rgb(186, 0, 109);
 }
 
+/* Media Queries */
 
+@media only screen and (max-width: 1215px) {
+    /* Main Sections */
 
-/* Colour Mode Switch */
-#switch {
-    display: inline-flex;
-    align-items: center;
+    #bio_section {
+        justify-content: center;
+    }
+
+    #banner .img-container {
+        margin: 0 0 1rem 0;
+    }
+    
+    #banner .bio {
+        width: 100%;
+    }
+
 }
 
-.fa-regular {
-    color: silver;
-}
+@media only screen and (max-width: 814px) {
+    
+    .mobile{
+        display: block;
+    }
 
-.fa-moon {
-    padding-right: 0.25rem;
-}
-
-.fa-sun {
-    padding-left: 0.25rem;
-}
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 3rem;
-    height: 1.5rem;
-    padding: 0 1rem;
-}
-
-.switch input {
-    display: none;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: silver;
-    transition: .4s;
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    transition: .4s;
-}
-
-input:checked+.slider {
-    background-color: rgb(44, 1, 70);
-}
-
-input:checked+.slider:before {
-    transform: translateX(1.5rem);
-}
-
-.slider.round {
-    border-radius: 1rem;
-}
-
-.slider.round:before {
-    border-radius: 50%;
+    .desktop {
+        display: none;
+    }
 }
