@@ -234,59 +234,59 @@ h2 {
     text-align: center;
 }
 
-/* Projects */
+/* Content */
 
 .content-section {
     color: white;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#projects {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-
-
-.challenge {
-    grid-area: 9 / 1 / 17 / 17;
-}
-
-.challenge h3 {
-    text-align: center;
-}
-
-.project-container {
-    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-section h2 {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+/* Projects */
+.project-container {
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+}
+
+.project-container h3 {
     width: 100%;
 }
 
-.project-container a:hover,
-#cheat:hover {
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.challenge {
+    justify-content: space-between;
+}
+
+.cheat {
+    align-self: stretch;
+}
+
+.project-container a:hover {
     transform: scale(1.075);
 }
 
-
 .project-container a {
     text-decoration: none;
-}
-
-.project-container a,
-#cheat {
     transition-property: all;
     transition-duration: 0.30s;
     transition-timing-function: ease-in-out;
-}
-
-.js .project-container {
-    justify-content: right;
-}
-
-.challenge .project-container {
-    justify-content: space-between;
 }
 
 .project {
@@ -305,18 +305,11 @@ h2 {
     margin: 1rem 1rem 0 0;
 }
 
-.js .project-container a {
-    margin: 1rem 0 0 1rem;
-}
+
 
 .challenge .project-container a {
     margin-top: 1rem;
 }
-
-#cheat {
-    margin-top: 1rem;
-}
-
 
 figure img {
     width: 100%;
@@ -335,18 +328,13 @@ figcaption {
 /* Skills */
 
 #skills {
-    margin: -6rem 0 6rem 0;
+    margin-top: 5rem;
     display: flex;
-    flex-flow: column wrap;
-}
-
-.content-section h2 {
-    padding-bottom: 1rem;
+    flex-direction: column;
 }
 
 #skills .project-container {
     justify-content: space-evenly;
-    width: 80%;
 }
 
 .fab,
@@ -364,7 +352,7 @@ figcaption {
 /* Footer */
 
 footer {
-    margin-top: 4rem;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
