@@ -144,11 +144,13 @@ input:checked+.slider:before {
 
 main {
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 section {
     width: 80%;
+    position: relative;
 }
 
 h2 {
@@ -164,13 +166,11 @@ h2 {
     background-image: url("../images/banner.jpg");
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    position: absolute;
 }
 
 #bio_section {
-    margin-top: 4rem;
+    margin: 9rem 0 10rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -182,7 +182,8 @@ h2 {
     background-color: rgba(44, 1, 70, 0.35);
     padding: 1rem 3rem;
     border-radius: 1rem;
-    width: 65%;
+    flex: 1 1 60%;
+    margin-right: 2.5rem;
 }
 
 .bio p,
@@ -195,19 +196,18 @@ h2 {
     padding-left: 2rem;
 }
 
-#banner .img-container {
+.img-container {
     max-height: 20rem;
     max-width: 20rem;
-    margin-left: 1rem;
 }
 
-#banner .photo1 {
+.photo1 {
     border-radius: 50%;
     height: 100%;
     width: 100%;
 }
 
-#banner .photo2 {
+.photo2 {
     display: none;
 }
 
@@ -237,54 +237,18 @@ h2 {
 /* Projects */
 
 .content-section {
-    display: flex;
     color: white;
-    width: 100%;
-    justify-content: center;
+    display: flex;
     align-items: center;
-}
-
-#projects h2 {
-    padding-bottom: 2rem;
+    flex-direction: column;
 }
 
 #projects {
-    position: relative;
-    top: -10rem;
     display: flex;
     flex-flow: column wrap;
 }
 
-#projects-grid {
-    display: grid;
-    grid-template-columns: repeat(16, minmax(0, 1fr));
-    grid-template-rows: repeat(16, minmax(0, 1fr));
-    gap: 2rem;
-}
 
-.grid-item {
-    max-width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-}
-
-.off-platform {
-    grid-area: 1 / 1 / 9 / 9;
-
-}
-
-.off-platform h3 {
-    text-align: left;
-}
-
-.js {
-    grid-area: 1 / 9 / 9 / 17;
-}
-
-.js h3 {
-    text-align: right;
-}
 
 .challenge {
     grid-area: 9 / 1 / 17 / 17;
@@ -522,30 +486,40 @@ footer a {
 
 /* Media Queries */
 
-@media only screen and (max-width: 1215px) {
+@media only screen and (max-width: 1150px) {
     /* Main Sections */
 
     #bio_section {
         justify-content: center;
+        margin-bottom: 5rem;
     }
 
-    #banner .img-container {
-        margin: 0 0 1rem 0;
-    }
-    
-    #banner .bio {
-        width: 100%;
-    }
-
+    .bio {
+        margin-top: 1rem;
+        margin-right: 0;
+        flex-basis: 100%;
+    }  
 }
 
 @media only screen and (max-width: 814px) {
     
-    .mobile{
+    .mobile {
         display: block;
     }
 
     .desktop {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    
+    .desktop-home {
+        display: none;
+    }
+
+    .mobile-home {
+        display: block;
+        font-size: 2.5rem;
     }
 }
