@@ -29,6 +29,7 @@ header {
     align-items: center;
     padding: 0 1rem;
     height: 4rem;
+    z-index: 1;
 }
 
 h1 a {
@@ -41,20 +42,14 @@ h1 a {
 
 /* Nav */
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    width: 100%;
-    align-items: center;
+nav {
+    min-width: 40%;
 }
 
-nav h1 a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: white;
-    font-family: 'Aladin', cursive;
-    letter-spacing: 0.2rem;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
 nav li a {
@@ -67,11 +62,6 @@ nav li a {
 
 nav li a:hover {
     color: rgb(117, 196, 202);
-}
-
-nav li {
-    display: flex;
-    align-items: center;
 }
 
 .mobile {
@@ -95,7 +85,7 @@ h2 {
     margin-top: 4rem;
     height: 50rem;
     width: 100%;
-    /* background-image: url("../images/banner.jpg"); */
+    background-image: url("../images/banner.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
