@@ -1,0 +1,527 @@
+/* Universal Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    /* background-color: black; */
+}
+
+/* Header */
+
+header {
+    background-color: rgb(44, 1, 70);
+    border-bottom: silver 2px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    height: 4rem;
+}
+
+h1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 0.2rem;
+}
+
+/* Nav */
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    align-items: center;
+}
+
+nav h1 a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Aladin', cursive;
+    letter-spacing: 0.2rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    color: rgb(117, 196, 202);
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+}
+
+.mobile {
+    display: none;
+}
+
+.mobile-home {
+    display: none;
+}
+
+
+/* Main & Sections */
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Banner */
+
+#banner {
+    margin-top: 4rem;
+    height: 50rem;
+    width: 100%;
+    /* background-image: url("../images/banner.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#bio_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: -20rem;
+}
+
+#banner .bio {
+    color: white;
+    width: 65%;
+    background-color: rgba(44, 1, 70, 0.35);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    /*need to consider responsiveness - smaller screens due to neg margin bio hidden under nav*/
+}
+
+.bio p,
+.bio-contact p {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+}
+
+.bio ul {
+    padding-left: 2rem;
+}
+
+#banner .img-container {
+    max-height: 20rem;
+    max-width: 20rem;
+    margin-left: 1rem;
+}
+
+#banner .photo1 {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#banner .photo2 {
+    display: none;
+}
+
+#bio_section-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-top: -25rem;
+}
+
+.bio-contact {
+    color: white;
+    width: 100%;
+    background-color: rgba(44, 1, 70, 0.35);
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.bio-contact h2, .bio-contact p, .bio-contact div {
+    text-align: center;
+}
+
+/* Projects */
+
+.content-section {
+    display: flex;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects h2 {
+    padding-bottom: 2rem;
+}
+
+#projects {
+    position: relative;
+    top: -10rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#projects-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    grid-template-rows: repeat(16, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.grid-item {
+    max-width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.off-platform {
+    grid-area: 1 / 1 / 9 / 9;
+
+}
+
+.off-platform h3 {
+    text-align: left;
+}
+
+.js {
+    grid-area: 1 / 9 / 9 / 17;
+}
+
+.js h3 {
+    text-align: right;
+}
+
+.challenge {
+    grid-area: 9 / 1 / 17 / 17;
+}
+
+.challenge h3 {
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project-container a:hover,
+#cheat:hover {
+    transform: scale(1.075);
+}
+
+
+.project-container a {
+    text-decoration: none;
+}
+
+.project-container a,
+#cheat {
+    transition-property: all;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in-out;
+}
+
+.js .project-container {
+    justify-content: right;
+}
+
+.challenge .project-container {
+    justify-content: space-between;
+}
+
+.project {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    width: 14rem;
+    text-align: center;
+}
+
+.project:active {
+    background-color: silver;
+}
+
+.off-platform .project-container a {
+    margin: 1rem 1rem 0 0;
+}
+
+.js .project-container a {
+    margin: 1rem 0 0 1rem;
+}
+
+.challenge .project-container a {
+    margin-top: 1rem;
+}
+
+#cheat {
+    margin-top: 1rem;
+}
+
+
+figure img {
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: 0.25rem;
+}
+
+figcaption {
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    color: black;
+    height: 100%;
+    font-weight: 500;
+}
+
+/* Skills */
+
+#skills {
+    margin: -6rem 0 6rem 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.content-section h2 {
+    padding-bottom: 1rem;
+}
+
+#skills .project-container {
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.fab,
+.fas {
+    font-size: 4rem;
+    padding: 1rem 1rem;
+    color: white;
+}
+
+.email-icon {
+    display: none;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    border-top: silver solid 1px;
+}
+
+small {
+    color: silver;
+}
+
+footer .right {
+    text-align: right;
+}
+
+footer a {
+    color: rgb(117, 196, 202);
+    text-decoration: none;
+}
+
+/* LIGHT MODE */
+
+/* Nav */
+
+.light body {
+    background-color: white;
+}
+
+.light nav {
+    background-color: white;
+    border-bottom: rgb(44, 1, 70) 2px solid;
+}
+
+.light h1 a {
+    color: black
+}
+
+.light nav li a {
+    color: black;
+}
+
+.light nav li a:hover {
+    color: rgb(186, 0, 109);
+}
+
+.light .fa-regular {
+    color: rgb(44, 1, 70);
+}
+
+/* Main & Sections */
+
+/* Banner */
+
+.light #banner {
+    background-image: url("../images/banner-light-mode.png");
+}
+
+/* add color img to bio img, default hide, then when light, show color and hide greyscale */
+
+.light #banner .bio {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.light .bio-contact {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.light #banner .photo1 {
+    display: none;
+}
+
+.light #banner .photo2 {
+    display: block;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+/* Projects */
+
+.light .content-section {
+    color: black;
+}
+
+.light .project {
+    background-color: rgba(44, 1, 70, 0.35);
+}
+
+.light .project:active {
+    background-color: rgb(117, 196, 202);
+}
+
+.light figcaption {
+    color: black;
+}
+
+/* Skills */
+
+.light .fab,
+.light .fas {
+    color: black;
+}
+
+/* Footer */
+
+.light footer {
+    border-top: rgb(44, 1, 70) solid 1px;
+}
+
+.light footer small {
+    color: rgb(44, 1, 70);
+}
+
+.light footer a {
+    color: rgb(186, 0, 109);
+}
+
+
+
+/* Colour Mode Switch */
+#switch {
+    display: inline-flex;
+    align-items: center;
+}
+
+.fa-regular {
+    color: silver;
+}
+
+.fa-moon {
+    padding-right: 0.25rem;
+}
+
+.fa-sun {
+    padding-left: 0.25rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3rem;
+    height: 1.5rem;
+    padding: 0 1rem;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: silver;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: rgb(44, 1, 70);
+}
+
+input:checked+.slider:before {
+    transform: translateX(1.5rem);
+}
+
+.slider.round {
+    border-radius: 1rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

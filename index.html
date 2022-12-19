@@ -13,49 +13,45 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-    <link href="resources/css/style.css" rel="stylesheet">
+    <link href="resources/css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/aee73c47a3.js" crossorigin="anonymous"></script>
     <script src="resources/js/script.js" defer></script>
-    <title>TEST</title>
+    <title>Portfolio Homepage</title>
 </head>
 
 <body>
     <header>
+        <h1>
+            <a href="#" class="desktop-home">CHARLIE H</a>
+            <a href="#" class="mobile-home">CH</a>
+        </h1>
+        <div id="switch">
+            <i class="fa-regular fa-moon"></i>
+            <label for="lightToggle" class="switch">
+                <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
+                <span class="slider round"></span>
+            </label>
+            <i class="fa-regular fa-sun"></i>
+        </div>
         <nav role="menubar">
-            <h1>
-                <a href="#" class="desktop-home">CHARLIE H</a>
-                <a href="#" class="mobile-home">CH</a>
-            </h1>
-            <div id="switch">
-                <i class="fa-regular fa-moon"></i>
-                <label for="lightToggle" class="switch">
-                    <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
-                    <span class="slider round"></span>
-                </label>
-                <i class="fa-regular fa-sun"></i>
-            </div>
-            <div id="menu">
-                <label class="burger-button" for="burger-button"><i class="fa-solid fa-bars"></i></label>
-                <input class="burger-button" type="checkbox" id="burger-button"/>
-                <ul>  
-                    <li>
-                        <a href="#banner" role="menuitem" class="desktop">Bio</a>
-                        <a href="#banner" role="menuitem" class="mobile"><i class="fa-solid fa-user"></i></a>
-                    </li>
-                    <li>
-                        <a href="#projects" role="menuitem" class="desktop">Projects</a>
-                        <a href="#projects" role="menuitem" class="mobile"><i class="fa-solid fa-diagram-project"></i></a>
-                    </li>
-                    <li>
-                        <a href="#skills" role="menuitem" class="desktop">Skills</a>
-                        <a href="#skills" role="menuitem"class="mobile"><i class="fa-solid fa-graduation-cap"></i></a>
-                    </li>
-                    <li>
-                        <a href="resources\contact.html" role="menuitem" class="desktop">Contact</a>
-                        <a href="resources\contact.html" role="menuitem" class="mobile"><i class="fa-solid fa-paper-plane"></i></a>
-                    </li>
-                </ul>
-            </div>
+            <ul>  
+                <li>
+                    <a href="#banner" role="menuitem" class="desktop">Bio</a>
+                    <a href="#banner" role="menuitem" class="mobile"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="#projects" role="menuitem" class="desktop">Projects</a>
+                    <a href="#projects" role="menuitem" class="mobile"><i class="fa-solid fa-diagram-project"></i></a>
+                </li>
+                <li>
+                    <a href="#skills" role="menuitem" class="desktop">Skills</a>
+                    <a href="#skills" role="menuitem"class="mobile"><i class="fa-solid fa-graduation-cap"></i></a>
+                </li>
+                <li>
+                    <a href="resources\contact.html" role="menuitem" class="desktop">Contact</a>
+                    <a href="resources\contact.html" role="menuitem" class="mobile"><i class="fa-solid fa-paper-plane"></i></a>
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -132,16 +128,14 @@
                 <div class="challenge grid-item">
                     <h3>CodeCademy Challenges</h3>
                     <div class="project-container">
-                        <div class="project" id="cheat">
-                            <a href="https://charlieh94.github.io/CheatSheet/">
-                                <div>
-                                    <figure>
-                                        <img src="resources/images/Cheat Sheet.png" alt="Cheat Sheet Landing Page"/>
-                                        <figcaption>Cheat Sheet</figcaption>
-                                    </figure>
-                                </div>
-                            </a>
-                        </div>
+                        <a href="https://charlieh94.github.io/CheatSheet/">
+                            <div class="project">
+                                <figure>
+                                    <img src="resources/images/Cheat Sheet.png" alt="Cheat Sheet Landing Page"/>
+                                    <figcaption>Cheat Sheet</figcaption>
+                                </figure>
+                            </div>
+                        </a>
                         <a href="https://charlieh94.github.io/WebsiteDesignSystem/">
                             <div class="project middle">
                                 <figure>
