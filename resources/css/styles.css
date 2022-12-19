@@ -256,8 +256,9 @@ h2 {
     align-content: flex-start;
 }
 
-.project-container h3 {
+h3 {
     width: 100%;
+    margin-top: 1rem;
 }
 
 .left {
@@ -273,10 +274,16 @@ h2 {
 .challenge {
     text-align: center;
     justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
 }
 
 .cheat {
     height: 100%;
+}
+
+#cheat {
+    margin-bottom: 1rem;
 }
 
 .project-container a:hover,
@@ -298,6 +305,7 @@ h2 {
     border-radius: 0.5rem;
     width: 14rem;
     text-align: center;
+    margin-top: 1rem;
 }
 
 .project:active {
