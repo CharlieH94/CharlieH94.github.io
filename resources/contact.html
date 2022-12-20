@@ -28,42 +28,43 @@
             <div id="switch">
                 <i class="fa-regular fa-moon"></i>
                 <label for="lightToggle" class="switch">
+                    <span class="visually-hidden">Enable Light Mode</span>
                     <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
                     <span class="slider round"></span>
                 </label>
                 <i class="fa-regular fa-sun"></i>
             </div>    
-            <nav role="menubar">
+            <nav>
                 <ul>  
                     <li>
-                        <a href="../index.html#banner" role="menuitem" class="desktop">Bio</a>
-                    <a href="../index.html#banner" role="menuitem" class="mobile"><i class="fa-solid fa-user"></i></a>
+                        <a href="../index.html#banner" class="desktop">Bio</a>
+                    <a href="../index.html#banner" class="mobile" aria-label="bio"><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li>
-                        <a href="../index.html#projects" role="menuitem" class="desktop">Projects</a>
-                        <a href="../index.html#projects" role="menuitem" class="mobile"><i class="fa-solid fa-diagram-project"></i></a>
+                        <a href="../index.html#projects" class="desktop">Projects</a>
+                        <a href="../index.html#projects" class="mobile" aria-label="projects"><i class="fa-solid fa-diagram-project"></i></a>
                     </li>
                     <li>
-                        <a href="../index.html#skills" role="menuitem" class="desktop">Skills</a>
-                        <a href="../index.html#skills" role="menuitem" class="mobile"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a href="../index.html#skills" class="desktop">Skills</a>
+                        <a href="../index.html#skills" class="mobile" aria-label="skills"><i class="fa-solid fa-graduation-cap"></i></a>
                     </li>
                     <li>
-                        <a href="#" role="menuitem" class="desktop">Contact</a>
-                        <a href="#" role="menuitem" class="mobile"><i class="fa-solid fa-paper-plane"></i></a>
+                        <a href="#" class="desktop">Contact</a>
+                        <a href="#" class="mobile" aria-label="contact"><i class="fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <div id="banner"></div>
+        <div id="banner" role="presentation"></div>
         <main> 
             <section id="bio-contact">
                 <div class="bio">
                     <h2>Get In Touch</h2>
                     <p>Please let me know if you have any feedback or project ideas! </p>
                     <div>
-                        <a href="https://www.linkedin.com/in/charles-hooper-485424b4/"><i class="fab fa-linkedin icon"></i></a>
-                        <a href="https://github.com/CharlieH94"><i class="fab fa-github icon"></i></a>
-                        <a href="#" class="email-icon"><i class="fas fa-envelope-square icon"></i></a>
+                        <a href="https://www.linkedin.com/in/charles-hooper-485424b4/" aria-label="linkedin"><i class="fab fa-linkedin icon"></i></a>
+                        <a href="https://github.com/CharlieH94" aria-label="github"><i class="fab fa-github icon"></i></a>
+                        <a href="#" class="email-icon" aria-label="email"><i class="fas fa-envelope-square icon"></i></a>
                     </div>
                 </div>
             </section>

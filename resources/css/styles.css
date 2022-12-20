@@ -74,6 +74,10 @@ nav li a:hover {
 
 /* Colour Mode Switch */
 
+.visually-hidden {
+    display: none;
+}
+
 #switch {
     display: inline-flex;
     align-items: center;

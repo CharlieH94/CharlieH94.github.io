@@ -28,33 +28,34 @@
             <div id="switch">
                 <i class="fa-regular fa-moon"></i>
                 <label for="lightToggle" class="switch">
+                    <span class="visually-hidden">Enable Light Mode</span>
                     <input id="lightToggle" name="lightToggle" type="checkbox" role="switch">
                     <span class="slider round"></span>
                 </label>
                 <i class="fa-regular fa-sun"></i>
             </div>
-            <nav role="menubar">
+            <nav>
                 <ul>  
                     <li>
-                        <a href="#banner" role="menuitem" class="desktop">Bio</a>
-                        <a href="#banner" role="menuitem" class="mobile"><i class="fa-solid fa-user"></i></a>
+                        <a href="#banner" class="desktop">Bio</a>
+                        <a href="#banner" class="mobile" aria-label="bio"><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li>
-                        <a href="#projects" role="menuitem" class="desktop">Projects</a>
-                        <a href="#projects" role="menuitem" class="mobile"><i class="fa-solid fa-diagram-project"></i></a>
+                        <a href="#projects" class="desktop">Projects</a>
+                        <a href="#projects" class="mobile" aria-label="projects"><i class="fa-solid fa-diagram-project"></i></a>
                     </li>
                     <li>
-                        <a href="#skills" role="menuitem" class="desktop">Skills</a>
-                        <a href="#skills" role="menuitem" class="mobile"><i class="fa-solid fa-graduation-cap"></i></a>
+                        <a href="#skills" class="desktop">Skills</a>
+                        <a href="#skills" class="mobile" aria-label="skills"><i class="fa-solid fa-graduation-cap"></i></a>
                     </li>
                     <li>
-                        <a href="resources/contact.html" role="menuitem" class="desktop">Contact</a>
-                        <a href="resources/contact.html" role="menuitem" class="mobile"><i class="fa-solid fa-paper-plane"></i></a>
+                        <a href="resources/contact.html" class="desktop">Contact</a>
+                        <a href="resources/contact.html" class="mobile" aria-label="contact"><i class="fa-solid fa-paper-plane"></i></a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <div id="banner"></div>
+        <div id="banner" role="presentation"></div>
         <main>
             <section id="bio_section">
                 <div class="bio">
