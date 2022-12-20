@@ -170,7 +170,7 @@ h2 {
     position: absolute;
 }
 
-#bio_section {
+#bio_section, #bio-contact {
     margin: 9rem 0 10rem 0;
     display: flex;
     justify-content: space-between;
@@ -187,8 +187,7 @@ h2 {
     margin-right: 2.5rem;
 }
 
-.bio p,
-.bio-contact p {
+.bio p {
     font-size: 1rem;
     padding: 0.25rem 0;
 }
@@ -212,27 +211,17 @@ h2 {
     display: none;
 }
 
-#bio_section-contact {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    margin-top: -25rem;
+#bio-contact {
+    justify-content: center;
+    text-align: center;
 }
 
-.bio-contact {
-    color: white;
-    width: 100%;
-    background-color: rgba(44, 1, 70, 0.35);
-    padding: 1rem 3rem;
-    border-radius: 1rem;
+#bio-contact .bio {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-}
-
-.bio-contact h2, .bio-contact p, .bio-contact div {
-    text-align: center;
+    margin-right: 0;
+    flex-grow: 0;
 }
 
 /* Content */
@@ -423,11 +412,6 @@ footer a {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.light .bio-contact {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 .light .photo1 {
     display: none;
 }
@@ -489,7 +473,12 @@ footer a {
         margin-top: 1rem;
         margin-right: 0;
         flex-basis: 100%;
-    }  
+    } 
+    
+    #bio-contact .bio {
+        margin-top: 0;
+        flex-basis: auto;
+    }
 }
 
 /* Tablet */
@@ -550,7 +539,7 @@ footer a {
 
 @media only screen and (max-width: 415px) {
     
-    .bio, .bio-contact {
+    .bio {
         padding: 1rem 2rem;
     }
     
