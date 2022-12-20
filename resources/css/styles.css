@@ -73,6 +73,7 @@ nav li a:hover {
 }
 
 /* Colour Mode Switch */
+
 #switch {
     display: inline-flex;
     align-items: center;
@@ -250,6 +251,7 @@ h2 {
 }
 
 /* Projects */
+
 .project-container {
     display: inline-flex;
     flex-flow: row wrap;
@@ -308,18 +310,16 @@ h3 {
     margin-top: 1rem;
 }
 
+.left .project {
+    margin-right: 1rem;
+}
+
+.right .project {
+    margin-left: 1rem;
+}
+
 .project:active {
     background-color: silver;
-}
-
-.off-platform .project-container a {
-    margin: 1rem 1rem 0 0;
-}
-
-
-
-.challenge .project-container a {
-    margin-top: 1rem;
 }
 
 figure img {
@@ -358,7 +358,6 @@ figcaption {
 .email-icon {
     display: none;
 }
-
 
 /* Footer */
 
@@ -528,6 +527,13 @@ footer a {
         text-align: center;
     }
 
+    .left .project {
+        margin-right: 0;
+    }
+    
+    .right .project {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 550px) {
