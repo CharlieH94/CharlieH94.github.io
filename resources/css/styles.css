@@ -329,6 +329,7 @@ figcaption {
 
 #skills {
     margin-top: 5rem;
+    margin-bottom: -15rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -347,20 +348,23 @@ figcaption {
 /* Footer */
 
 footer {
-    margin-top: 5rem;
+    margin-top: 20rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 1.5rem;
     border-top: silver solid 1px;
+    position: relative;
+    bottom: 0;
 }
 
 small {
     color: silver;
 }
 
-footer .right {
+.footer-right {
     text-align: right;
+    margin-left: 1rem;
 }
 
 footer a {
