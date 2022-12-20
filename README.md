@@ -33,3 +33,11 @@ Task set as part of CodeCademy Full Stack Pathway.
 
 ## License
 None.
+
+## Updates
+As part of preparation for Northcoders, I spent some time reviewing the project and tried to refactor and improve the code base, while maintaining the site's responsiveness.
+This resulted in changes including, but not limited to:
+- Removing unnecessary classes and div's
+- Rethinking previous layout decisions, in particular the use of CSS grid
+- Accessibility improvements including updated ARIA tags and labels, and tweaks using the W3 markup validation service
+- Multiple small aesthetic and functional tweaks
