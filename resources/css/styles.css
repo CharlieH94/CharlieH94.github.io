@@ -476,6 +476,8 @@ footer a {
 
 /* Media Queries */
 
+/* Smaller Desktop Screen */
+
 @media only screen and (max-width: 1150px) {
 
     #bio_section {
@@ -489,6 +491,8 @@ footer a {
         flex-basis: 100%;
     }  
 }
+
+/* Tablet */
 
 @media only screen and (max-width: 814px) {
     
@@ -527,6 +531,8 @@ footer a {
         margin-left: 0;
     }
 }
+
+/* Logo to Initials for better spaced nav - burger menu in future perhaps? */
 
 @media only screen and (max-width: 550px) {
     
