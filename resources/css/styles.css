@@ -366,6 +366,10 @@ footer {
     bottom: 0;
 }
 
+.contact-footer {
+    margin-top: 33rem;
+}
+
 small {
     color: silver;
 }
